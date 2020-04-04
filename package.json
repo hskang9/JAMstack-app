@@ -33,6 +33,7 @@
     "react": "^16.13.1",
     "react-dom": "^16.13.1",
     "react-helmet": "^5.2.0",
+    "react-icons": "^3.9.0",
     "react-instantsearch": "^6.4.0",
     "react-instantsearch-dom": "^6.4.0",
     "react-lottie": "^1.2.3",
