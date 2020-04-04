@@ -1,0 +1,13 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<svg width="17px" height="16px" viewBox="0 0 17 16" version="1.1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink">
+    <!-- Generator: Sketch 63.1 (92452) - https://sketch.com -->
+    <title>Icon/Search</title>
+    <desc>Created with Sketch.</desc>
+    <g id="Web-page" stroke="none" stroke-width="1" fill="none" fill-rule="evenodd">
+        <g id="Desktop-HD" transform="translate(-306.000000, -1228.000000)" fill="#000000" fill-rule="nonzero">
+            <g id="Icon/Search" transform="translate(302.500000, 1224.000000)">
+                <path d="M16.7,15.2298137 C17.6,14.0372671 18.1,12.6459627 18.1,11.0559006 C18.1,7.18012422 15,4 11.1,4 C7.2,4 4,7.18012422 4,11.0559006 C4,14.931677 7.2,18.1118012 11.1,18.1118012 C12.7,18.1118012 14.2,17.6149068 15.3,16.7204969 L18.3,19.7018634 C18.5,19.9006211 18.8,20 19,20 C19.2,20 19.5,19.9006211 19.7,19.7018634 C20.1,19.3043478 20.1,18.7080745 19.7,18.310559 L16.7,15.2298137 Z M11.1,16.0248447 C8.3,16.0248447 6,13.8385093 6,11.0559006 C6,8.27329193 8.3,5.98757764 11.1,5.98757764 C13.9,5.98757764 16.2,8.27329193 16.2,11.0559006 C16.2,13.8385093 13.9,16.0248447 11.1,16.0248447 Z" id="Fill"></path>
+            </g>
+        </g>
+    </g>
+</svg>

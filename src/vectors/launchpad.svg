@@ -1,0 +1,27 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<svg width="603px" height="120px" viewBox="0 0 603 120" version="1.1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink">
+    <!-- Generator: Sketch 64 (93537) - https://sketch.com -->
+    <title>Group 2</title>
+    <desc>Created with Sketch.</desc>
+    <defs>
+        <rect x="0" y="0" width="120" height="120" id="rect-1"></rect>
+    </defs>
+    <g id="Page-1" stroke="none" stroke-width="1" fill="none" fill-rule="evenodd">
+        <g id="Artboard" transform="translate(-49.000000, -39.000000)">
+            <g id="Group-2" transform="translate(49.000000, 39.000000)">
+                <g id="Group" transform="translate(150.000000, 0.000000)" fill="#FFFFFF" font-family="AppleSDGothicNeo-Regular, Apple SD Gothic Neo" font-size="100" font-weight="normal">
+                    <text id="Launchpad">
+                        <tspan x="0.45" y="90">Launchpad</tspan>
+                    </text>
+                </g>
+                <g id="Group">
+                    <g id="icon">
+                        <image x="0" y="0" width="120" height="120" xlink:href="data:image/png;base64,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"></image>
+                        <use fill="#000000" fill-rule="evenodd" xlink:href="#rect-1"></use>
+                    </g>
+                    <rect id="Rectangle" fill="#01E79E" x="28.75" y="28.75" width="62.5" height="62.5"></rect>
+                </g>
+            </g>
+        </g>
+    </g>
+</svg>

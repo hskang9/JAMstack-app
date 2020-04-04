@@ -1,0 +1,129 @@
+@import url('https://fonts.googleapis.com/css?family=Roboto&display=swap');
+@import url(https://db.onlinewebfonts.com/c/67680f2eb947c5cbd58b40961b4a61e9?family=Apple + SD + Gothic + Neo);
+
+body {
+  font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen,
+    Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
+  margin: 0;
+}
+
+.ais-SearchBox {
+  margin: 1em 0;
+  min-width: 300px;
+  width: 650px;
+  margin-left: 30px;
+}
+
+.right-panel {
+  margin-left: 30px;
+}
+
+@media only screen and (max-width: 600px) {
+  .ais-SearchBox {
+    margin: 1em 0;
+    min-width: 300px;
+    width: 300px;
+    margin-left: 30px;
+  }
+
+  .right-panel {
+    margin-left: 0px;
+  }
+}
+
+.ais-Pagination {
+  margin-top: 1em;
+}
+.left-panel {
+  display: flex;
+  flex: 1;
+  flex-direction: column;
+  min-width: 200px;
+  margin-left: 10px;
+}
+
+.ais-InstantSearch {
+  max-width: 960px;
+  overflow: hidden;
+  margin: 0 auto;
+}
+
+.neumorphism-grid {
+  margin-top: 60px;
+  display: grid;
+  grid-template: 2/2;
+  grid-column-gap: 20px;
+  grid-row-gap: 50px;
+  justify-items: stretch;
+}
+
+.neumorphism-black {
+  border-radius: 50px;
+  background: linear-gradient(145deg, #222222, #1d1d1d);
+  box-shadow: 5px 5px 13px #161616, -5px -5px 13px #2a2a2a;
+}
+
+.neumorphism-black:hover {
+  border-radius: 50px;
+  background: #202020;
+  box-shadow: inset 5px 5px 13px #161616, inset -5px -5px 13px #2a2a2a;
+}
+
+.neumorphism-white {
+  border-radius: 8px;
+  background: #f0f0f3;
+  box-shadow: -10px -10px 30px #ffffff, 10px 10px 30px #bec4c9;
+}
+
+.neumorphism-white-inset {
+  border-radius: 8px;
+  background: #f0f0f3;
+  box-shadow: inset 20px 20px 60px #606061, inset -20px -20px 60px #ffffff;
+}
+
+.neumorphism-text-white {
+  color: white;
+  text-shadow: 1px 1px -1px #c8d3cc, -1px -1px 0px #ffffff;
+}
+
+.neumorphism-text-white-light {
+  color: white;
+  font-weight: 100;
+}
+
+.neumorphism-text-black {
+  color: #202020;
+  text-decoration: none;
+}
+
+.raffle-card {
+  display: grid;
+  text-decoration: none;
+  grid-template-areas:
+    'logo logo logo logo' 'info info info info'
+    'action action action action';
+  margin: 0 0 24px;
+  grid-column-gap: 16px;
+  border-bottom: 1px solid rgb(221, 221, 223);
+}
+
+body {
+  text-decoration: none;
+}
+
+.ReactModal__Overlay {
+  overflow: auto;
+  opacity: 0;
+  transform: translateY(-10%);
+  transition: opacity 0.3s cubic-bezier(0.445, 0.05, 0.55, 0.95),
+    transform 0.3s cubic-bezier(0.445, 0.05, 0.55, 0.95);
+}
+.ReactModal__Overlay--after-open {
+  opacity: 1;
+  transform: translateY(0);
+}
+
+.ReactModal__Overlay--before-close {
+  opacity: 0;
+  transform: translateY(-10%);
+}
