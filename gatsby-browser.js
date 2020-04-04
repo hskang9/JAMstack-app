@@ -12,4 +12,4 @@ export const onPrefetchPathname = ({ loadPage }) => {
   }
 };
 
-export { default as wrapRootElement } from './src/state/ReduxWrapper';
+export { default as wrapRootElement } from './src/state/redux-wrapper';
