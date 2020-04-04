@@ -1,20 +1,10 @@
-<p align="center">
-  <a href="https://www.gatsbyjs.org">
-    <img alt="Gatsby" src="https://www.gatsbyjs.org/monogram.svg" width="60" />
-  </a>
-  <a href="https://redux.js.org">
-    <img alt="Redux" src="https://redux.js.org/img/redux.svg" width="60" />
-  </a>
-</p>
-<h1 align="center">
-  Gatsby Starter Redux & Emotion
-</h1>
+# JAMstack app
 
-Minimalistic starter template for Gatsby with Redux and Emotion to get you started.
+JAMstack app
 
 ## Demo
 
-https://caki0915.github.io/gatsby-starter-redux/
+http://launchpad.fyi/
 
 ## Features
 
