@@ -95,7 +95,7 @@ const IndexPage = () => {
                 style={{
                   textDecoration: 'none',
                 }}
-                to="/login/"
+                to="/"
                 state={{
                   modal: false,
                 }}
