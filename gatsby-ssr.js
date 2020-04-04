@@ -7,4 +7,4 @@ const onRenderBody = ({ setPostBodyComponents }) => {
 
 export { onRenderBody };
 
-export { default as wrapRootElement } from './src/state/reduxWrapper';
+export { default as wrapRootElement } from './src/state/redux-wrapper';
