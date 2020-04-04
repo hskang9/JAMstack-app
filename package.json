@@ -1,8 +1,8 @@
 {
-  "name": "gatsby-starter-redux",
-  "description": "A simple starter with Redux to get up and developing quickly with Gatsby",
+  "name": "JAMstack-app",
+  "description": "A JAMstack app for tutorial",
   "version": "0.0.1",
-  "author": "Carl-Johan Kihl <carljohan.kihl@gmail.com>",
+  "author": "Hyungsuk Kang <hskang9@gmail.com>",
   "contributors": [
     "Kyle Mathews <mathews.kyle@gmail.com>"
   ],
@@ -59,7 +59,7 @@
   },
   "repository": {
     "type": "git",
-    "url": "https://github.com/caki0915/gatsby-starter-redux"
+    "url": "https://github.com/hskang9/JAMstack-app"
   },
   "bugs": {
     "url": "https://github.com/caki0915/gatsby-starter-redux/issues"
