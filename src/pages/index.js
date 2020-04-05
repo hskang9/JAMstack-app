@@ -261,7 +261,7 @@ const Intro = styled.div`
   justify-content: center;
   overflow: scroll;
 
-  @media only screen and (max-width: 600px) {
+  @media only screen and (max-width: 800px) {
     display: none;
   }
 `;
@@ -282,7 +282,7 @@ const SearchNav = styled.div`
   align-items: center;
   display: flex;
 
-  @media only screen and (max-width: 600px) {
+  @media only screen and (max-width: 800px) {
     width: 100%;
     align-items: center;
   }
@@ -305,14 +305,14 @@ const SearchBody = styled.div`
   display: flex;
   margin-top: 100px;
 
-  @media only screen and (max-width: 600px) {
+  @media only screen and (max-width: 800px) {
     margin-top: 400px;
   }
 `;
 
 const MobileIntro = styled.div`
   display: none;
-  @media only screen and (max-width: 600px) {
+  @media only screen and (max-width: 800px) {
     background-image: url(${mobileIntroImage});
     background-position: bottom;
     flex-direction: column;
