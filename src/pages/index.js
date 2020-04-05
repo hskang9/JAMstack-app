@@ -296,6 +296,7 @@ const SearchBody = styled.div`
 const MobileIntro = styled.div`
   display: none;
   @media only screen and (max-width: 600px) {
+    flex-direction: column;
     position: absolute;
     top: 50px;
     display: flex;
