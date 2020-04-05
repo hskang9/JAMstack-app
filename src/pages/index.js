@@ -142,7 +142,10 @@ const IndexPage = () => {
                 </Explanation>
               </KeyPoint4>
             </div>
-            <a className="neumorphism-text-white-light" href="">
+            <a
+              className="neumorphism-text-white-light"
+              href="https://forms.gle/yzy1YjGjywNaf3W87"
+            >
               <h3 style={{ marginTop: '50px' }}>
                 앱을 현재 제작 중입니다. 어느 플랫폼에 먼저 배포할지에 대해
                 설문을 참여하고 싶으시다면 이 텍스트를 클릭해주세요.
@@ -315,7 +318,7 @@ const Filters = styled.div`
 const SearchNav = styled.div`
   position: absolute;
   height: 50px;
-  width: 50%;
+  width: 100%;
   top: 0;
   background: #f0f0f0;
   border-bottom: #c2c2c5 solid 1px;

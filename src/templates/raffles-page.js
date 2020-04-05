@@ -107,7 +107,10 @@ const PostTemplate = ({ pageContext }) => {
                 <Raffles />
               </Loading>
             </InstantSearch>
-            <a href="" style={{ color: 'black' }}>
+            <a
+              href="https://forms.gle/joVMLoxeCNQidaVw6"
+              style={{ color: 'black' }}
+            >
               <h3 style={{ textAlign: 'center' }}>
                 래플 이벤트를 진행하는 스토어들을 기다리고 있습니다.
               </h3>
