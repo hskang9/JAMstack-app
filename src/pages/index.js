@@ -181,6 +181,12 @@ const IndexPage = () => {
               }}
             />
           </SearchNav>
+          <MobileIntro>
+            <h2 className="neumorphism-text-white" style={{ margin: '20px' }}>
+              해외 스니커즈 래플 및 발매 소식을 <br />
+              모두 한곳에.
+            </h2>
+          </MobileIntro>
           <SearchBody>
             <InstantSearch
               style={{ marginTop: '100px' }}
@@ -273,6 +279,23 @@ const SearchPanel = styled.div`
 const SearchBody = styled.div`
   display: flex;
   margin-top: 100px;
+
+  @media only screen and (max-width: 600px) {
+    margin-top: 400px;
+  }
+`;
+
+const MobileIntro = styled.div`
+  display: none;
+  @media only screen and (max-width: 600px) {
+    position: absolute;
+    top: 50px;
+    display: flex;
+    background: #202020;
+    width: 100%;
+    height: 300px;
+    padding: 10px 10px 10px 10px;
+  }
 `;
 
 const IntroPanel = styled.div`
@@ -348,12 +371,6 @@ const Footer = styled.div`
     background: #202020;
     box-sizing: border-box;
     z-index: 0;
-  }
-`;
-
-const FooterLogoWhite = styled(FooterLogo)`
-  @media only screen and (max-width: 600px) {
-    width: 100px;
   }
 `;
 
