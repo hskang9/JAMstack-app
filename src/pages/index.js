@@ -340,7 +340,7 @@ const SearchBody = styled.div`
   display: flex;
   margin-top: 100px;
   @media only screen and (max-width: 800px) {
-    margin-top: 400px;
+    margin-top: 450px;
   }
 `;
 
@@ -354,7 +354,7 @@ const MobileIntro = styled.div`
     top: 50px;
     display: flex;
     width: 100%;
-    height: 300px;
+    height: 350px;
     padding: 10px 10px 10px 10px;
   }
 `;
