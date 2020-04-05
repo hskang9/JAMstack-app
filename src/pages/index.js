@@ -199,7 +199,7 @@ const IndexPage = () => {
               }}
             >
               <div style={{ marginBottom: '20px' }}>
-                곧 출시될 스니커즈에 대한 소식을 바로 받아보세요.
+                곧 출시될 아이템에 대한 래플이나 소식을 바로 받아보세요.
               </div>
               <div style={{ marginBottom: '20px' }}>
                 내가 참여할 수 있는 래플만 찾아드립니다.
