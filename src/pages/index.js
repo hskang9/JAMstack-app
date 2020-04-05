@@ -232,7 +232,7 @@ const IndexPage = () => {
                 <Loading>
                   <SearchBox
                     className="neumorphism-white search-box"
-                    searchAsYouType={true}
+                    searchAsYouType={false}
                   />
                   <CustomHits />
                 </Loading>
