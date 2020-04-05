@@ -26,6 +26,7 @@ import { CustomHits } from '../components/sneakers-hits';
 import { connectStateResults } from 'react-instantsearch/connectors';
 import Loader from '../components/loader';
 import LoginModal from '../components/login-modal';
+import mobileIntroImage from '../images/hero.webp';
 
 const searchClient = algoliasearch(
   process.env.GATSBY_ALGOLIA_APP_ID,
@@ -181,18 +182,34 @@ const IndexPage = () => {
             />
           </SearchNav>
           <MobileIntro>
-            <h2 className="neumorphism-text-white" style={{ margin: '20px' }}>
-              해외 스니커즈 래플 및 발매 소식을 <br />
+            <h2
+              className="neumorphism-text-white"
+              style={{ marginLeft: '10px' }}
+            >
+              국내외 래플 및 발매 소식을 <br />
               모두 한곳에.
             </h2>
             <div
               className="neumorphism-text-white"
-              style={{ display: 'flex', flexDirection: 'column' }}
+              style={{
+                display: 'flex',
+                flexDirection: 'column',
+                marginLeft: '10px',
+                marginTop: '40px',
+              }}
             >
-              <div>곧 출시될 스니커즈에 대한 소식을 바로 받아보세요.</div>
-              <div>내가 참여할 수 있는 래플만 찾아드립니다.</div>
-              <div>페이스북에서 업데이트를 받아보세요.</div>
-              <div>인스타그램에서 새로운 소식을 팔로우해보세요.</div>
+              <div style={{ marginBottom: '10px' }}>
+                곧 출시될 스니커즈에 대한 소식을 바로 받아보세요.
+              </div>
+              <div style={{ marginBottom: '10px' }}>
+                내가 참여할 수 있는 래플만 찾아드립니다.
+              </div>
+              <div style={{ marginBottom: '10px' }}>
+                페이스북에서 업데이트를 받아보세요.
+              </div>
+              <div style={{ marginBottom: '10px' }}>
+                인스타그램에서 새로운 소식을 팔로우해보세요.
+              </div>
             </div>
           </MobileIntro>
           <SearchBody>
@@ -296,11 +313,12 @@ const SearchBody = styled.div`
 const MobileIntro = styled.div`
   display: none;
   @media only screen and (max-width: 600px) {
+    background-image: url(${mobileIntroImage});
+    background-position: bottom;
     flex-direction: column;
     position: absolute;
     top: 50px;
     display: flex;
-    background: #202020;
     width: 100%;
     height: 300px;
     padding: 10px 10px 10px 10px;
