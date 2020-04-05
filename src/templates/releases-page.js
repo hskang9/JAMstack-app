@@ -7,12 +7,32 @@ import { Releases } from '../components/release';
 import { FaTimesCircle } from 'react-icons/fa';
 import algoliasearch from 'algoliasearch/lite';
 import { connectRefinementList } from 'react-instantsearch/connectors';
-import { InstantSearch, Configure } from 'react-instantsearch-dom';
+import { InstantSearch } from 'react-instantsearch-dom';
 import '../components/layout.css';
+import Loader from '../components/loader';
+
+import { connectStateResults } from 'react-instantsearch/connectors';
 
 const FilterByIds = connectRefinementList(() => null);
 
 Modal.setAppElement(`#___gatsby`);
+
+const Loading = connectStateResults(({ searching, children }) => (
+  <div>
+    <div style={{ display: searching ? 'block' : 'none' }}>
+      <Loader
+        style={{
+          width: '300px',
+          height: '300px',
+          position: 'absolute',
+          top: '50%',
+        }}
+      />
+    </div>
+
+    <div style={{ display: searching ? 'none' : 'block' }}>{children}</div>
+  </div>
+));
 
 const modalStyles = {
   overlay: {
@@ -79,11 +99,13 @@ const PostTemplate = ({ pageContext }) => {
           >
             <h1 style={{ marginBottom: '30px' }}>출시 매장</h1>
             <InstantSearch indexName="release" searchClient={searchClient}>
-              <FilterByIds
-                attribute="productID"
-                defaultRefinement={pageContext.objectID}
-              />
-              <Releases />
+              <Loading>
+                <FilterByIds
+                  attribute="productID"
+                  defaultRefinement={pageContext.objectID}
+                />
+                <Releases />
+              </Loading>
             </InstantSearch>
             <a href="" style={{ color: 'black' }}>
               <h3 style={{ textAlign: 'center' }}>
