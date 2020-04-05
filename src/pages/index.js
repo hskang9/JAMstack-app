@@ -198,16 +198,16 @@ const IndexPage = () => {
                 marginTop: '40px',
               }}
             >
-              <div style={{ marginBottom: '10px' }}>
+              <div style={{ marginBottom: '20px' }}>
                 곧 출시될 스니커즈에 대한 소식을 바로 받아보세요.
               </div>
-              <div style={{ marginBottom: '10px' }}>
+              <div style={{ marginBottom: '20px' }}>
                 내가 참여할 수 있는 래플만 찾아드립니다.
               </div>
-              <div style={{ marginBottom: '10px' }}>
+              <div style={{ marginBottom: '20px' }}>
                 페이스북에서 업데이트를 받아보세요.
               </div>
-              <div style={{ marginBottom: '10px' }}>
+              <div style={{ marginBottom: '20px' }}>
                 인스타그램에서 새로운 소식을 팔로우해보세요.
               </div>
             </div>
