@@ -199,15 +199,51 @@ const IndexPage = () => {
               }}
             >
               <div style={{ marginBottom: '20px' }}>
+                <FaCheck
+                  style={{
+                    color: 'white',
+                    width: '15px',
+                    height: '15px',
+                    marginLeft: '10px',
+                    marginRight: '10px',
+                  }}
+                />
                 곧 출시될 아이템에 대한 래플이나 소식을 바로 받아보세요.
               </div>
               <div style={{ marginBottom: '20px' }}>
+                <FaTag
+                  style={{
+                    color: 'white',
+                    width: '15px',
+                    height: '15px',
+                    marginLeft: '10px',
+                    marginRight: '10px',
+                  }}
+                />
                 내가 참여할 수 있는 래플만 찾아드립니다.
               </div>
               <div style={{ marginBottom: '20px' }}>
+                <FaFacebook
+                  style={{
+                    color: 'white',
+                    width: '15px',
+                    height: '15px',
+                    marginLeft: '10px',
+                    marginRight: '10px',
+                  }}
+                />
                 페이스북에서 업데이트를 받아보세요.
               </div>
               <div style={{ marginBottom: '20px' }}>
+                <FaInstagram
+                  style={{
+                    color: 'white',
+                    width: '15px',
+                    height: '15px',
+                    marginLeft: '10px',
+                    marginRight: '10px',
+                  }}
+                />
                 인스타그램에서 새로운 소식을 팔로우해보세요.
               </div>
             </div>
