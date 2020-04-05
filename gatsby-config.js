@@ -1,5 +1,3 @@
-import Logo from './src/images/logo.png';
-
 require('dotenv').config({
   path: `.env`,
 });
@@ -9,10 +7,10 @@ const queries = [];
 module.exports = {
   siteMetadata: {
     title: `Launchpad`,
-    titleTemplate: `%s: 해외 스니커즈 래플 및 발매 소식을 모두 한곳에`,
+    titleTemplate: `%s: 국내외 스니커즈 래플 및 발매 소식을 모두 한곳에`,
     description: `런치패드는 당신의 패션을 위한 큐레이션 검색 엔진입니다.`,
     url: `https://launchpad.fyi`,
-    image: Logo,
+    image: 'images/logo.png',
     author: 'Hyungsuk Kang',
     twitterUsername: '@launchpad',
   },
