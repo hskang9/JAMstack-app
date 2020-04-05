@@ -124,7 +124,7 @@ const IndexPage = () => {
                   }}
                 />
                 <Explanation className="neumorphism-text-white-light">
-                  페이스북에서 업데이트를 받아보세요
+                  페이스북 페이지에서 업데이트를 받아보세요.
                 </Explanation>
               </KeyPoint3>
               <KeyPoint4 className="neumorphism-black">
@@ -137,7 +137,7 @@ const IndexPage = () => {
                   }}
                 />
                 <Explanation className="neumorphism-text-white-light">
-                  인스타그램에서 래플이나 새신발에 관한 소식을 팔로우해보세요
+                  인스타그램에서 래플이나 새로운 소식을 팔로우해보세요.
                 </Explanation>
               </KeyPoint4>
             </div>
@@ -185,6 +185,10 @@ const IndexPage = () => {
               해외 스니커즈 래플 및 발매 소식을 <br />
               모두 한곳에.
             </h2>
+            <div>곧 출시될 스니커즈에 대한 소식을 바로 받아보세요.</div>
+            <div>내가 참여할 수 있는 래플만 찾아드립니다.</div>
+            <div>페이스북에서 업데이트를 받아보세요.</div>
+            <div>인스타그램에서 새로운 소식을 팔로우해보세요.</div>
           </MobileIntro>
           <SearchBody>
             <InstantSearch
