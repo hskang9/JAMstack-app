@@ -187,7 +187,7 @@ const IndexPage = () => {
           <MobileIntro>
             <h2
               className="neumorphism-text-white"
-              style={{ marginLeft: '10px', marginTop: '10px' }}
+              style={{ marginLeft: '10px', marginTop: '30px' }}
             >
               국내외 래플 및 발매 소식을 <br />
               모두 한곳에.
