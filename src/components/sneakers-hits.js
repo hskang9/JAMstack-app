@@ -5,7 +5,7 @@ import { Link } from 'gatsby';
 
 const Hits = ({ hits }) => {
   return (
-    <div style={{ marginLeft: '30px' }}>
+    <div style={{ marginLeft: '0px' }}>
       {hits.map((hit) => (
         <SneakersCard key={hit.objectID} className="neumorphism-white">
           <Frame
