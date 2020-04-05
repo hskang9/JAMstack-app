@@ -6,7 +6,6 @@ import styled from '@emotion/styled';
 import algoliasearch from 'algoliasearch/lite';
 import MobileLogo from '../vectors/logo-mobile.svg';
 import Logo from '../vectors/launchpad.svg';
-import FooterLogo from '../vectors/launchpad_logo.svg';
 import {
   FaCheck,
   FaInstagram,
