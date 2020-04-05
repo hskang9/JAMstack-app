@@ -26,7 +26,7 @@ import { CustomHits } from '../components/sneakers-hits';
 import { connectStateResults } from 'react-instantsearch/connectors';
 import Loader from '../components/loader';
 import LoginModal from '../components/login-modal';
-import mobileIntroImage from '../images/hero.webp';
+import mobileIntroImage from '../images/hero.png';
 
 const searchClient = algoliasearch(
   process.env.GATSBY_ALGOLIA_APP_ID,
