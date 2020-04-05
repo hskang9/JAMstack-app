@@ -303,7 +303,6 @@ const SearchPanel = styled.div`
 const SearchBody = styled.div`
   display: flex;
   margin-top: 100px;
-  overflow: scroll;
   @media only screen and (max-width: 800px) {
     margin-top: 400px;
   }
