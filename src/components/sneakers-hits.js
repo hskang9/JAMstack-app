@@ -54,8 +54,7 @@ const SneakersCard = styled.div`
   transition: 0.25s;
   transform: translate3d(0px, 5px, 0px);
 
-  &:hover,
-  &:focus {
+  &:hover {
     box-shadow: 0 0.5em 0.5em -0.4em var(--hover);
     transform: translateZ(0.25em);
   }
