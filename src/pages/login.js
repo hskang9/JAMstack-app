@@ -27,7 +27,7 @@ const modalStyles = {
   },
 };
 
-const InstaPostTemplate = ({ data }) => {
+const LoginTemplate = ({ data }) => {
   const building = typeof window === 'undefined';
   const [indexPageData, setIndexPageData] = useState(
     !building && window.indexPageData,
@@ -60,4 +60,4 @@ const InstaPostTemplate = ({ data }) => {
   );
 };
 
-export default InstaPostTemplate;
+export default LoginTemplate;

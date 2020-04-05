@@ -6,6 +6,7 @@ import styled from '@emotion/styled';
 import algoliasearch from 'algoliasearch/lite';
 import MobileLogo from '../vectors/logo-mobile.svg';
 import Logo from '../vectors/launchpad.svg';
+import FooterLogo from '../vectors/launchpad_logo.svg';
 import {
   FaCheck,
   FaInstagram,
@@ -209,7 +210,13 @@ const IndexPage = () => {
           </SearchBody>
         </SearchPanel>
       </div>
-      <Footer></Footer>
+      <Footer>
+        <FooterContent>
+          <SiteMap>
+            <FooterHeader>LAUNCHPAD</FooterHeader>
+          </SiteMap>
+        </FooterContent>
+      </Footer>
       {toggleLogin && <LoginModal setToggleLogin={setToggleLogin} />}
     </div>
   );
@@ -331,12 +338,50 @@ const BuyMeACoffee = styled.div`
 `;
 
 const Footer = styled.div`
+  display: none;
+  @media only screen and (max-width: 600px) {
+    display: flex;
+    width: 100%;
+    height: 200px;
+    bottom: 0;
+    flex: 1 1 0%;
+    background: #202020;
+    box-sizing: border-box;
+    z-index: 0;
+  }
+`;
+
+const FooterLogoWhite = styled(FooterLogo)`
+  @media only screen and (max-width: 600px) {
+    width: 100px;
+  }
+`;
+
+const FooterContent = styled.div`
+  display: flex;
+  min-width: 0px;
+  max-width: 1125px;
+  flex-direction: column;
+  padding: 24px 24px 24px 32px;
+  align-items: flex-start;
+  justify-content: space-between;
+  @media only screen and (max-width: 600px) {
+    padding: 24px;
+  }
+`;
+
+const FooterHeader = styled.div`
+  color: rgb(102, 102, 102);
+  letter-spacing: 0.1em;
+  font-weight: 500;
+  font-size: 11px;
+`;
+
+const SiteMap = styled.div`
   display: block;
-  width: 100%;
-  height: 200px;
-  bottom: 0;
-  background: #202020;
-  z-index: 0;
+  line-height: 1.15;
+  color: white;
+  margin: 0px 8px 24px 0px;
 `;
 
 export default IndexPage;

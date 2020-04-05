@@ -11,6 +11,7 @@ module.exports = {
     description: `런치패드는 당신의 패션을 위한 큐레이션 검색 엔진입니다.`,
     url: `https://launchpad.fyi`,
     image: '/images/logo.png',
+    author: 'Hyungsuk Kang',
     twitterUsername: '@launchpad',
   },
   plugins: [
