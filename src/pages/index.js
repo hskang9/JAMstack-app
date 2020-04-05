@@ -264,7 +264,7 @@ const IndexPage = () => {
                 <Configure hitsPerPage={8} />
                 <ClearRefinements />
               </Filters>
-              <div className="right-panel">
+              <div className="right-panel" style={{ maxHeight: 'fit-content' }}>
                 <Loading>
                   <SearchBox
                     className="neumorphism-white search-box"
@@ -281,6 +281,10 @@ const IndexPage = () => {
         <FooterContent>
           <SiteMap>
             <FooterHeader>LAUNCHPAD</FooterHeader>
+            <br></br>
+            <FooterText>런치패드 | 개발·편집자: 강형석</FooterText>
+            <br></br>
+            <FooterText>© LAUNCHPAD All Right Reserved.</FooterText>
           </SiteMap>
         </FooterContent>
       </Footer>
@@ -456,6 +460,13 @@ const FooterHeader = styled.div`
   letter-spacing: 0.1em;
   font-weight: 500;
   font-size: 11px;
+`;
+
+const FooterText = styled.div`
+  color: rgb(102, 102, 102);
+  letter-spacing: 0.1em;
+  font-weight: 500;
+  font-size: 9px;
 `;
 
 const SiteMap = styled.div`
