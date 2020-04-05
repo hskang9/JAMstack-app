@@ -198,11 +198,11 @@ const IndexPage = () => {
                 <ClearRefinements />
               </Filters>
               <div className="right-panel">
-                <SearchBox
-                  className="neumorphism-white search-box"
-                  searchAsYouType={true}
-                />
                 <Loading>
+                  <SearchBox
+                    className="neumorphism-white search-box"
+                    searchAsYouType={true}
+                  />
                   <CustomHits />
                 </Loading>
               </div>
