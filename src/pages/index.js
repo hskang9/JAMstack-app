@@ -318,7 +318,7 @@ const SearchNav = styled.div`
   align-items: center;
   display: flex;
 
-  @media only screen and (max-width: 800px) {
+  @media only screen and (max-width: 1200px) {
     width: 100%;
     align-items: center;
   }
@@ -339,14 +339,14 @@ const SearchPanel = styled.div`
 const SearchBody = styled.div`
   display: flex;
   margin-top: 100px;
-  @media only screen and (max-width: 800px) {
+  @media only screen and (max-width: 1200px) {
     margin-top: 450px;
   }
 `;
 
 const MobileIntro = styled.div`
   display: none;
-  @media only screen and (max-width: 800px) {
+  @media only screen and (max-width: 1200px) {
     background-image: url(${mobileIntroImage});
     background-position: bottom;
     flex-direction: column;
@@ -419,6 +419,10 @@ const BuyMeACoffee = styled.div`
   background: yellow;
   display: flex;
   align-items: center;
+
+  @media only screen and (max-width: 1200px) {
+    display: none;
+  }
 `;
 
 const Footer = styled.div`
