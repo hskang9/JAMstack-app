@@ -392,7 +392,7 @@ const Footer = styled.div`
   @media only screen and (max-width: 600px) {
     display: flex;
     width: 100%;
-    height: 200px;
+    height: 100px;
     bottom: 0;
     flex: 1 1 0%;
     background: #202020;
