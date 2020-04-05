@@ -114,7 +114,7 @@ body {
 .ReactModal__Overlay {
   overflow: auto;
   opacity: 0;
-  transform: translateY(-10%);
+  transform: translateZ(-10%);
   transition: opacity 0.3s cubic-bezier(0.445, 0.05, 0.55, 0.95),
     transform 0.3s cubic-bezier(0.445, 0.05, 0.55, 0.95);
 }
