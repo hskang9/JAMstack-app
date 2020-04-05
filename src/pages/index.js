@@ -293,9 +293,8 @@ const SearchPanel = styled.div`
   display: flex;
   border-radius: 8px;
   background: #f0f0f3;
-  overflow: scroll;
   height: 100vh;
-
+  min-height: 1000px;
   @media only screen and (max-width: 600px) {
     justify-content: center;
   }
@@ -304,7 +303,7 @@ const SearchPanel = styled.div`
 const SearchBody = styled.div`
   display: flex;
   margin-top: 100px;
-
+  overflow: scroll;
   @media only screen and (max-width: 800px) {
     margin-top: 400px;
   }
@@ -393,7 +392,6 @@ const Footer = styled.div`
     display: flex;
     width: 100%;
     height: 100px;
-    bottom: 0;
     flex: 1 1 0%;
     background: #202020;
     box-sizing: border-box;
