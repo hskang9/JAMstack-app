@@ -5,6 +5,7 @@ import { connectHits } from 'react-instantsearch-dom';
 import { OutboundLink } from 'gatsby-plugin-google-analytics';
 
 const RaffleCard = ({ hit }) => {
+  console.log(hit);
   return (
     <div className="raffle-card">
       <OutboundLink href={hit.link} style={{ textDecoration: 'none' }}>

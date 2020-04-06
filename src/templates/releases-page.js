@@ -58,6 +58,7 @@ const searchClient = algoliasearch(
 );
 
 const PostTemplate = ({ pageContext }) => {
+  console.log(pageContext.releases);
   const building = typeof window === 'undefined';
   const [indexPageData, setIndexPageData] = useState(
     !building && window.indexPageData,
@@ -102,10 +103,11 @@ const PostTemplate = ({ pageContext }) => {
             <InstantSearch indexName="release" searchClient={searchClient}>
               <Loading>
                 <FilterByIds
-                  attribute="productID"
-                  defaultRefinement={pageContext.objectID}
+                  attribute="objectID"
+                  defaultRefinement={pageContext.releases}
                 />
-                <Releases />
+                {pageContext.releases != undefined &&
+                  pageContext.releases.length != 0 && <Releases />}
               </Loading>
             </InstantSearch>
             <OutboundLink

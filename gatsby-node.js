@@ -52,7 +52,7 @@ exports.createPages = async ({ graphql, actions: { createPage } }) => {
         brand: hit.brand,
         price: hit.price,
         release_date: hit.release_date,
-        raffles: hit.raffles,
+        releases: hit.releases,
         pid: hit.pid,
         image: hit.image,
         id: hit.objectID,

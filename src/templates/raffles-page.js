@@ -6,13 +6,14 @@ import styled from '@emotion/styled';
 import { Raffles } from '../components/raffle';
 import { FaTimesCircle } from 'react-icons/fa';
 import algoliasearch from 'algoliasearch/lite';
-import { connectRefinementList } from 'react-instantsearch/connectors';
-import { InstantSearch } from 'react-instantsearch-dom';
+import {
+  connectRefinementList,
+  connectStateResults,
+} from 'react-instantsearch/connectors';
+import { InstantSearch, RefinementList } from 'react-instantsearch-dom';
 import '../components/layout.css';
 import Loader from '../components/loader';
 import { OutboundLink } from 'gatsby-plugin-google-analytics';
-
-import { connectStateResults } from 'react-instantsearch/connectors';
 
 const FilterByIds = connectRefinementList(() => null);
 
@@ -59,6 +60,7 @@ const searchClient = algoliasearch(
 
 const PostTemplate = ({ pageContext }) => {
   const building = typeof window === 'undefined';
+
   const [indexPageData, setIndexPageData] = useState(
     !building && window.indexPageData,
   );
@@ -102,10 +104,11 @@ const PostTemplate = ({ pageContext }) => {
             <InstantSearch indexName="raffle" searchClient={searchClient}>
               <Loading>
                 <FilterByIds
-                  attribute="productID"
-                  defaultRefinement={pageContext.objectID}
+                  attribute="objectID"
+                  defaultRefinement={pageContext.raffles}
                 />
-                <Raffles />
+                {pageContext.raffles != undefined &&
+                  pageContext.raffles.length != 0 && <Raffles />}
               </Loading>
             </InstantSearch>
             <OutboundLink
