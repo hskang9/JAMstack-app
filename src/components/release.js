@@ -43,7 +43,7 @@ const ReleaseCard = ({ hit }) => {
           margin: '0px',
         }}
       >
-        <a href="" style={{ textDecoration: 'none' }}>
+        <a href={hit.link} style={{ textDecoration: 'none' }}>
           <Button>제품 구매</Button>
         </a>
       </div>

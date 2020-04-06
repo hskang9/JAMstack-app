@@ -43,7 +43,7 @@ const RaffleCard = ({ hit }) => {
           margin: '0px',
         }}
       >
-        <a href="" style={{ textDecoration: 'none' }}>
+        <a href={hit.link} style={{ textDecoration: 'none' }}>
           <Button>래플 참가</Button>
         </a>
       </div>
