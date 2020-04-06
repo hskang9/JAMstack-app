@@ -2,10 +2,12 @@ import React from 'react';
 import styled from '@emotion/styled';
 import { connectHits } from 'react-instantsearch-dom';
 
+import { OutboundLink } from 'gatsby-plugin-google-analytics';
+
 const RaffleCard = ({ hit }) => {
   return (
     <div className="raffle-card">
-      <a href={hit.link} style={{ textDecoration: 'none' }}>
+      <OutboundLink href={hit.link} style={{ textDecoration: 'none' }}>
         <Logo src={hit.logo} />
         <Site>
           <div
@@ -32,7 +34,7 @@ const RaffleCard = ({ hit }) => {
             </Meta>
           </div>
         </Site>
-      </a>
+      </OutboundLink>
       <div
         style={{
           gridArea: 'action / action / action / action',
@@ -43,9 +45,9 @@ const RaffleCard = ({ hit }) => {
           margin: '0px',
         }}
       >
-        <a href={hit.link} style={{ textDecoration: 'none' }}>
+        <OutboundLink href={hit.link} style={{ textDecoration: 'none' }}>
           <Button>래플 참가</Button>
-        </a>
+        </OutboundLink>
       </div>
     </div>
   );

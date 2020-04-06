@@ -10,6 +10,7 @@ import { connectRefinementList } from 'react-instantsearch/connectors';
 import { InstantSearch } from 'react-instantsearch-dom';
 import '../components/layout.css';
 import Loader from '../components/loader';
+import { OutboundLink } from 'gatsby-plugin-google-analytics';
 
 import { connectStateResults } from 'react-instantsearch/connectors';
 
@@ -107,14 +108,14 @@ const PostTemplate = ({ pageContext }) => {
                 <Releases />
               </Loading>
             </InstantSearch>
-            <a
+            <OutboundLink
               href="https://forms.gle/WSRb297PH3ySf7xL6"
               style={{ color: 'black' }}
             >
               <h3 style={{ textAlign: 'center' }}>
                 이외 출시를 예정할 스토어들을 기다리고 있습니다.
               </h3>
-            </a>
+            </OutboundLink>
           </div>
           <Link to="/">
             <Close />
