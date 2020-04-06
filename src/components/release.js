@@ -28,7 +28,7 @@ const ReleaseCard = ({ hit }) => {
             <Meta className="date">4월 4일, 1pm</Meta>
             <Meta>
               <Meta>{hit.place}</Meta>
-              <Meta style={{ marginLeft: '10px' }}>{hit.timezone}</Meta>
+              <Meta style={{ marginLeft: '10px' }}>{hit.price}</Meta>
             </Meta>
           </div>
         </Site>
