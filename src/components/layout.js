@@ -29,9 +29,9 @@ const Layout = ({ children }) => {
             <section>
               {children}
               <footer>
-                © {new Date().getFullYear()}, Built with
+                © {new Date().getFullYear()}, Copyright
                 {` `}
-                <a href="https://www.gatsbyjs.org">Gatsby</a>
+                <a href="https://www.launchpad.fyi">Launchpad</a>
               </footer>
             </section>
           </Container>
