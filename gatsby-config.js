@@ -10,9 +10,10 @@ module.exports = {
     titleTemplate: `%s: 국내외 스니커즈 래플 및 발매 소식을 모두 한곳에`,
     description: `런치패드는 당신의 패션을 위한 큐레이션 검색 엔진입니다.`,
     url: `https://launchpad.fyi`,
-    image: 'images/logo.png',
+    image: 'seo.png',
     author: 'Hyungsuk Kang',
     twitterUsername: '@launchpad',
+    keywords: ['raffle', 'release', '래플', '릴리즈', '스니커즈'],
   },
   plugins: [
     {
