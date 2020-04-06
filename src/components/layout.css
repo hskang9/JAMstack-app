@@ -72,7 +72,7 @@ body {
 .neumorphism-white {
   border-radius: 8px;
   background: #f0f0f3;
-  box-shadow: -10px -10px 30px #ffffff, 10px 10px 30px #bec4c9;
+  box-shadow: 5px 5px 10px #cccccf, -5px -5px 10px #ffffff;
 }
 
 .neumorphism-white-inset {

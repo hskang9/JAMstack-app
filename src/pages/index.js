@@ -291,6 +291,7 @@ const IndexPage = () => {
           </SiteMap>
         </FooterContent>
       </Footer>
+
       {toggleLogin && <LoginModal setToggleLogin={setToggleLogin} />}
     </div>
   );
@@ -318,14 +319,14 @@ const Filters = styled.div`
 const SearchNav = styled.div`
   position: absolute;
   height: 50px;
-  width: 100%;
+  width: 50%;
   top: 0;
   background: #f0f0f0;
   border-bottom: #c2c2c5 solid 1px;
   align-items: center;
   display: flex;
 
-  @media only screen and (max-width: 1200px) {
+  @media only screen and (max-width: 1500px) {
     width: 100%;
     align-items: center;
   }
@@ -336,7 +337,6 @@ const SearchPanel = styled.div`
   display: flex;
   border-radius: 8px;
   background: #f0f0f3;
-  height: 100vh;
   min-height: 1000px;
   @media only screen and (max-width: 600px) {
     justify-content: center;
@@ -348,6 +348,8 @@ const SearchBody = styled.div`
   margin-top: 100px;
   @media only screen and (max-width: 1200px) {
     margin-top: 450px;
+    min-height: 950px;
+    overflow: hidden;
   }
 `;
 

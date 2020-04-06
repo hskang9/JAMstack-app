@@ -5,7 +5,7 @@ import { Link } from 'gatsby';
 
 const Hits = ({ hits }) => {
   return (
-    <div style={{ marginLeft: '0px' }}>
+    <Results>
       {hits.map((hit) => (
         <SneakersCard key={hit.objectID} className="neumorphism-white">
           <Frame
@@ -37,7 +37,7 @@ const Hits = ({ hits }) => {
           </Description>
         </SneakersCard>
       ))}
-    </div>
+    </Results>
   );
 };
 
@@ -48,7 +48,7 @@ const SneakersCard = styled.div`
   align-items: center;
   flex-direction: column;
   width: 300px;
-  min-height: 320px;
+  height: 400px;
   overflow: auto;
   margin-top: 30px;
   transition: 0.25s;
@@ -110,5 +110,38 @@ const ReleaseInfo = styled.div`
   &:focus {
     box-shadow: 0 0.5em 0.5em -0.4em var(--hover);
     transform: translateZ(-0.1em);
+  }
+`;
+
+const Results = styled.div`
+  margin-top: 10px;
+  margin-left: 15px;
+  display: grid;
+  overflow-x: scroll;
+  min-height: 500px;
+  grid-row-gap: 24px;
+  grid-column-gap: 20px;
+  grid-template-rows: auto;
+  grid-template-columns: 1fr 1fr;
+
+  @media only screen and (max-width: 1200px) {
+    margin-left: 0px;
+    display: grid;
+    overflow-x: hidden;
+    min-height: 500px;
+    grid-row-gap: 24px;
+    grid-column-gap: 20px;
+    grid-template-rows: auto;
+    grid-template-columns: 1fr 1fr;
+  }
+
+  @media only screen and (max-width: 600px) {
+    margin-left: 0px;
+    display: grid;
+    overflow-x: hidden;
+    grid-row-gap: 24px;
+    grid-column-gap: 20px;
+    grid-template-rows: auto;
+    grid-template-columns: auto;
   }
 `;
