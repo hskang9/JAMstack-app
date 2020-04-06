@@ -348,7 +348,7 @@ const SearchBody = styled.div`
   margin-top: 100px;
   @media only screen and (max-width: 1200px) {
     margin-top: 450px;
-    min-height: 950px;
+    min-height: 1000px;
     overflow: hidden;
   }
 `;

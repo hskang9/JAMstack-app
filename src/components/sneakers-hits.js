@@ -123,6 +123,9 @@ const Results = styled.div`
   grid-column-gap: 20px;
   grid-template-rows: auto;
   grid-template-columns: 1fr 1fr;
+  ::-webkit-scrollbar {
+    width: 6px;
+  }
 
   @media only screen and (max-width: 1200px) {
     margin-left: 0px;
