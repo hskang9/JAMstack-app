@@ -59,7 +59,6 @@ const searchClient = algoliasearch(
 );
 
 const PostTemplate = ({ pageContext }) => {
-  console.log(pageContext.releases);
   const building = typeof window === 'undefined';
   const [indexPageData, setIndexPageData] = useState(
     !building && window.indexPageData,
