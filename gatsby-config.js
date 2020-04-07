@@ -6,6 +6,7 @@ const queries = [];
 
 module.exports = {
   siteMetadata: {
+    siteUrl: `https://www.launchpad.fyi`,
     title: `Launchpad`,
     titleTemplate: `%s: 국내외 스니커즈 래플 및 발매 소식을 모두 한곳에`,
     description: `런치패드는 당신의 패션을 위한 큐레이션 검색 엔진입니다.`,
@@ -92,5 +93,6 @@ module.exports = {
     // this (optional) plugin enables Progressive Web App + Offline functionality
     // To learn more, visit: https://gatsby.app/offline
     'gatsby-plugin-offline',
+    `gatsby-plugin-sitemap`,
   ],
 };
