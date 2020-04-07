@@ -27,7 +27,7 @@ const RaffleCard = ({ hit }) => {
               textDecoration: 'none',
             }}
           >
-            <Meta className="date">{hit.closingDate}</Meta>
+            <Meta className="date">마감일 {hit.closingDate}</Meta>
             <Meta>
               <Meta>{hit.place}</Meta>
               <Meta style={{ marginLeft: '10px' }}>{hit.price}</Meta>
