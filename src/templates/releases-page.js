@@ -77,7 +77,10 @@ const PostTemplate = ({ pageContext }) => {
   };
   return (
     <div>
-      <SEO image={pageContext.image} />
+      <SEO
+        image={pageContext.image}
+        pathname={`releases/${pageContext.objectID}`}
+      />
       <PageRenderer key={'/'} location={{ pathname: '/' }} />
       <Modal
         isOpen={modalOpen}
