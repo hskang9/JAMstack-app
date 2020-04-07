@@ -21,7 +21,7 @@ const SEO = ({ title, description, image, pathname, article }) => (
       const seo = {
         title: title || defaultTitle,
         description: description || defaultDescription,
-        image: `${siteUrl}${image || defaultImage}`,
+        image: `${image || siteUrl.concat(defaultImage)}`,
         url: `${siteUrl}${pathname || '/'}`,
       };
 

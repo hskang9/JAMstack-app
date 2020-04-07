@@ -13,6 +13,7 @@ import {
 import { InstantSearch, RefinementList } from 'react-instantsearch-dom';
 import '../components/layout.css';
 import Loader from '../components/loader';
+import SEO from '../components/seo';
 import { OutboundLink } from 'gatsby-plugin-google-analytics';
 
 const FilterByIds = connectRefinementList(() => null);

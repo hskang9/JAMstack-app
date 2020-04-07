@@ -10,6 +10,7 @@ import { connectRefinementList } from 'react-instantsearch/connectors';
 import { InstantSearch } from 'react-instantsearch-dom';
 import '../components/layout.css';
 import Loader from '../components/loader';
+import SEO from '../components/seo';
 import { OutboundLink } from 'gatsby-plugin-google-analytics';
 
 import { connectStateResults } from 'react-instantsearch/connectors';
