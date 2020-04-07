@@ -79,10 +79,7 @@ const PostTemplate = ({ pageContext }) => {
   };
   return (
     <div>
-      <SEO
-        image={pageContext.image}
-        pathname={`raffles/${pageContext.objectID}`}
-      />
+      <SEO image={pageContext.image} pathname={`${pageContext.name}`} />
       <PageRenderer key={'/'} location={{ pathname: '/' }} />
       <Modal
         isOpen={modalOpen}
