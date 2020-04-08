@@ -46,7 +46,12 @@ const LoginTemplate = ({ data }) => {
   };
   return (
     <div>
-      <PageRenderer key={'/'} location={{ pathname: '/' }} />
+      <PageRenderer
+        key={'/'}
+        location={{ pathname: '/' }}
+        pageResources={indexPageData}
+        path="/"
+      />
       <Modal
         isOpen={modalOpen}
         onRequestClose={closeModal}

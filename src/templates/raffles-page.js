@@ -60,8 +60,8 @@ const searchClient = algoliasearch(
 );
 
 const PostTemplate = ({ pageContext }) => {
+  // PageRenderer stuff
   const building = typeof window === 'undefined';
-
   const [indexPageData, setIndexPageData] = useState(
     !building && window.indexPageData,
   );
@@ -79,8 +79,13 @@ const PostTemplate = ({ pageContext }) => {
   };
   return (
     <div>
-      <SEO image={pageContext.image} pathname={`${pageContext.name}`} />
-      <PageRenderer key={'/'} location={{ pathname: '/' }} />
+      <SEO image={pageContext.image} pathname={`${pageContext.name} 래플`} />
+      <PageRenderer
+        key={'/'}
+        location={{ pathname: '/' }}
+        pageResources={indexPageData}
+        path="/"
+      />
       <Modal
         isOpen={modalOpen}
         onRequestClose={closeModal}
