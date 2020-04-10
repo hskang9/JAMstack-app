@@ -317,9 +317,9 @@ const Filters = styled.div`
 `;
 
 const SearchNav = styled.div`
-  position: absolute;
+  position: relative;
+  min-width: 900px;
   height: 50px;
-  width: 50%;
   top: 0;
   background: #f0f0f0;
   border-bottom: #c2c2c5 solid 1px;
@@ -335,6 +335,7 @@ const SearchNav = styled.div`
 const SearchPanel = styled.div`
   flex: 1;
   display: flex;
+  flex-direction: column;
   border-radius: 8px;
   background: #f0f0f3;
   min-height: 1000px;
