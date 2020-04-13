@@ -42,6 +42,7 @@ const Loading = connectStateResults(({ searching, children }) => (
           height: '300px',
           position: 'absolute',
           top: '50%',
+          left: '50%',
         }}
       />
     </div>
@@ -177,12 +178,18 @@ const IndexPage = () => {
           <SearchNav>
             <MobileLogo
               style={{
-                paddingLeft: '20px',
+                marginLeft: '20px',
                 width: '120px',
                 display: 'flex',
                 marginTop: '10px',
               }}
             />
+            <Menu>
+              <Link style={{ marginRight: '10px' }} to="/login">
+                sign up
+              </Link>
+              <Link>log in</Link>
+            </Menu>
           </SearchNav>
           <MobileIntro>
             <h2
@@ -305,7 +312,7 @@ const Intro = styled.div`
   justify-content: center;
   overflow: scroll;
 
-  @media only screen and (max-width: 800px) {
+  @media only screen and (max-width: 1200px) {
     display: none;
   }
 `;
@@ -330,6 +337,17 @@ const SearchNav = styled.div`
     width: 100%;
     align-items: center;
   }
+`;
+
+const Menu = styled.div`
+  display: flex;
+  width: auto;
+  flex: 1 1 0%;
+  justify-content: flex-end;
+  -webkit-box-pack: end;
+  flex-direction: row;
+  margin-right: 30px;
+  user-select: none;
 `;
 
 const SearchPanel = styled.div`
