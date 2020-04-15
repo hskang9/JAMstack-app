@@ -260,11 +260,12 @@ const IndexPage = () => {
           </MobileIntro>
           <SearchBody>
             <InstantSearch
-              style={{ marginTop: '100px' }}
+              style={{
+                marginTop: '100px',
+              }}
               indexName="product"
               searchClient={searchClient}
             >
-              <div id="searchbox"></div>
               <Filters className="left-panel">
                 <h2 style={{ fontFamily: 'roboto' }}>브랜드</h2>
                 <RefinementList attribute="brand" />
@@ -276,11 +277,13 @@ const IndexPage = () => {
               </Filters>
               <div className="right-panel" style={{ maxHeight: 'fit-content' }}>
                 <Loading>
-                  <SearchBox
-                    className="neumorphism-white search-box"
-                    searchAsYouType={false}
-                  />
-                  <CustomHits />
+                  <SearchResults>
+                    <SearchBox
+                      className="neumorphism-white search-box"
+                      searchAsYouType={false}
+                    />
+                    <CustomHits />
+                  </SearchResults>
                 </Loading>
               </div>
             </InstantSearch>
@@ -325,7 +328,6 @@ const Filters = styled.div`
 
 const SearchNav = styled.div`
   position: relative;
-  min-width: 900px;
   height: 50px;
   top: 0;
   background: #f0f0f0;
@@ -364,12 +366,19 @@ const SearchPanel = styled.div`
 
 const SearchBody = styled.div`
   display: flex;
+  justify-content: center;
   margin-top: 100px;
   @media only screen and (max-width: 1200px) {
     margin-top: 450px;
     min-height: 1000px;
     overflow: hidden;
   }
+`;
+
+const SearchResults = styled.div`
+  display: flex;
+  flex-direction: column;
+  align-items: center;
 `;
 
 const MobileIntro = styled.div`

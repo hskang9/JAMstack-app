@@ -15,6 +15,7 @@ body {
 }
 
 .right-panel {
+  padding-right: 50px;
   margin-left: 0px;
 }
 
@@ -28,6 +29,7 @@ body {
 
   .right-panel {
     margin-left: 0px;
+    padding-right: 0px;
   }
 }
 

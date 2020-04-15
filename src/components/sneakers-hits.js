@@ -17,7 +17,12 @@ const Hits = ({ hits }) => {
             <h3>{hit.name}</h3>
             <h4 className="neumorphism-text-black-light">{hit.release_date}</h4>
             <Link
-              style={{ textDecoration: 'none', color: '#202020' }}
+              style={{
+                textDecoration: 'none',
+                color: '#202020',
+                display: 'block',
+                width: '100px',
+              }}
               to={`/raffles/${hit.objectID}/`}
             >
               <Raffle className="neumorphism-white">
@@ -27,7 +32,12 @@ const Hits = ({ hits }) => {
 
             <br></br>
             <Link
-              style={{ textDecoration: 'none', color: '#202020' }}
+              style={{
+                textDecoration: 'none',
+                color: '#202020',
+                display: 'block',
+                width: '100px',
+              }}
               to={`/releases/${hit.objectID}/`}
             >
               <ReleaseInfo className="neumorphism-white">
