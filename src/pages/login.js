@@ -43,7 +43,7 @@ const LoginTemplate = ({ data }) => {
   const modalCloseTimeout = 30000;
   const closeModal = () => {
     setModalOpen(false);
-    setTimeout(() => navigate(`/`), modalCloseTimeout);
+    setTimeout(() => navigate(`/`), 0);
   };
   return (
     <div>
