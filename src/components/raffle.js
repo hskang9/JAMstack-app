@@ -66,7 +66,8 @@ const Hits = ({ hits }) => {
 export const Raffles = connectHits(Hits);
 
 const Logo = styled.img`
-  height: 80px;
+  max-width: 300px;
+  max-height: 80px;
   grid-area: logo / logo / logo / logo;
 `;
 
