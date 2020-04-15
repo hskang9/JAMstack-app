@@ -72,7 +72,7 @@ const PostTemplate = ({ pageContext }) => {
   }, []);
   // Modal stuff.
   const [modalOpen, setModalOpen] = useState(true);
-  const modalCloseTimeout = 30000;
+  const modalCloseTimeout = 3000;
   const closeModal = () => {
     setModalOpen(false);
     setTimeout(() => navigate(`/`), modalCloseTimeout);

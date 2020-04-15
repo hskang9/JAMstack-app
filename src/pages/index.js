@@ -185,10 +185,22 @@ const IndexPage = () => {
               }}
             />
             <Menu>
-              <Link style={{ marginRight: '10px' }} to="/login">
-                sign up
+              <Link
+                style={{
+                  marginRight: '10px',
+                  textDecoration: 'none',
+                  color: 'black',
+                }}
+                to="/login"
+              >
+                회원가입
               </Link>
-              <Link>log in</Link>
+              <Link
+                style={{ textDecoration: 'none', color: 'black' }}
+                to="/login"
+              >
+                로그인
+              </Link>
             </Menu>
           </SearchNav>
           <MobileIntro>

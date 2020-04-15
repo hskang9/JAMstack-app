@@ -21,6 +21,7 @@ const modalStyles = {
     right: 'auto',
     bottom: 'auto',
     maxWidth: '960px',
+    width: '300px',
     margin: '32px auto',
     padding: 0,
     border: 0,
@@ -59,6 +60,10 @@ const LoginTemplate = ({ data }) => {
         contentLabel="Modal"
         closeTimeoutMS={modalCloseTimeout}
       >
+        <div>
+          로그인하여 자기가 원하는 래플을 저장하거나 다른 유저들과 의견을
+          나눠보세요.
+        </div>
         <SocialLogins />
       </Modal>
     </div>
