@@ -27,7 +27,7 @@ import Loader from '../components/loader';
 import LoginModal from '../components/login-modal';
 import mobileIntroImage from '../images/hero.png';
 
-import { messaging } from '../utils/init-fcm';
+import { getFirebase } from '../utils/firebase';
 
 const searchClient = algoliasearch(
   process.env.GATSBY_ALGOLIA_APP_ID,
@@ -56,17 +56,24 @@ const IndexPage = () => {
   const [toggleLogin, setToggleLogin] = useState(false);
 
   useEffect(() => {
-    messaging
-      .requestPermission()
-      .then(async function () {
-        const token = await messaging.getToken();
-      })
-      .catch(function (err) {
-        console.log('Unable to get permission to notify.', err);
-      });
-    navigator.serviceWorker.addEventListener('message', (message) =>
-      console.log(message),
-    );
+    // Lazy load firebase module
+    const lazyApp = import('firebase/app');
+    const lazyFCM = import('firebase/messaging');
+
+    Promise.all([lazyApp, lazyFCM]).then(([firebase]) => {
+      const messaging = getFirebase(firebase).app().messaging();
+      messaging
+        .requestPermission()
+        .then(async function () {
+          const token = await messaging.getToken();
+        })
+        .catch(function (err) {
+          console.log('Unable to get permission to notify.', err);
+        });
+      navigator.serviceWorker.addEventListener('message', (message) =>
+        console.log(message),
+      );
+    });
   });
 
   return (
@@ -495,7 +502,7 @@ const BuyMeACoffee = styled.div`
 
 const Footer = styled.div`
   display: none;
-  @media only screen and (max-width: 600px) {
+  @media only screen and (max-width: 1500px) {
     display: flex;
     width: 100%;
     height: 100px;
