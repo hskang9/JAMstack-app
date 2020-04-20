@@ -1,6 +1,5 @@
-import React from 'react';
+import { React, useEffect, useState } from 'react';
 import { Link } from 'gatsby';
-import { useAuth } from 'gatsby-theme-firebase';
 import SEO from '../components/seo';
 import styled from '@emotion/styled';
 import algoliasearch from 'algoliasearch/lite';
@@ -28,6 +27,8 @@ import Loader from '../components/loader';
 import LoginModal from '../components/login-modal';
 import mobileIntroImage from '../images/hero.png';
 
+import { messaging } from '../utils/init-fcm';
+
 const searchClient = algoliasearch(
   process.env.GATSBY_ALGOLIA_APP_ID,
   process.env.GATSBY_ALGOLIA_SEARCH_KEY,
@@ -52,7 +53,21 @@ const Loading = connectStateResults(({ searching, children }) => (
 ));
 
 const IndexPage = () => {
-  const [toggleLogin, setToggleLogin] = React.useState(false);
+  const [toggleLogin, setToggleLogin] = useState(false);
+
+  useEffect(() => {
+    messaging
+      .requestPermission()
+      .then(async function () {
+        const token = await messaging.getToken();
+      })
+      .catch(function (err) {
+        console.log('Unable to get permission to notify.', err);
+      });
+    navigator.serviceWorker.addEventListener('message', (message) =>
+      console.log(message),
+    );
+  });
 
   return (
     <div>
@@ -61,6 +76,7 @@ const IndexPage = () => {
           display: 'flex',
           flexDirection: 'row',
           alignItems: 'stretch',
+          height: '100vh',
         }}
       >
         <SEO title="런치패드: 해외 스니커즈 래플 및 발매 소식을 모두 한곳에."></SEO>
@@ -395,7 +411,7 @@ const SearchResults = styled.div`
 
 const MobileIntro = styled.div`
   display: none;
-  @media only screen and (max-width: 1200px) {
+  @media only screen and (max-width: 1400px) {
     background-image: url(${mobileIntroImage});
     background-position: bottom;
     flex-direction: column;

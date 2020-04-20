@@ -14,7 +14,9 @@ const Hits = ({ hits }) => {
             src={hit.image}
           />
           <Description>
-            <h3>{hit.name}</h3>
+            <Name to="/">
+              <h3>{hit.name}</h3>
+            </Name>
             <h4 className="neumorphism-text-black-light">{hit.release_date}</h4>
             <Link
               style={{
@@ -158,3 +160,5 @@ const Results = styled.div`
     grid-template-columns: auto;
   }
 `;
+
+const Name = styled(Link)``;

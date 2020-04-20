@@ -1,5 +1,3 @@
-import React from 'react';
-
 // prefetch modal page on index page load
 export const onPrefetchPathname = ({ loadPage }) => {
   if (window.indexPageData === undefined) {
@@ -22,3 +20,4 @@ export const shouldUpdateScroll = ({
 };
 
 export { default as wrapRootElement } from './src/state/redux-wrapper';
+export const registerServiceWorker = () => true;

@@ -31,7 +31,22 @@ module.exports = {
         },
         loginPath: '/',
         loginRedirectPath: '/',
-        socialLogins: ['google', 'twitter', 'facebook', 'github'],
+        socialLogins: ['google'],
+      },
+    },
+    {
+      resolve: `gatsby-plugin-firebase-messaging`,
+      options: {
+        //required unless removeFirebaseServiceWorker == true
+        config: {
+          apiKey: process.env.FIREBASE_API_KEY,
+          appId: process.env.FIREBASE_APP_ID,
+          messagingSenderId: process.env.FIREBASE_MESSAGING_SENDER_ID,
+          projectId: process.env.FIREBASE_PROJECT_ID,
+        },
+        //both of these are optional
+        disableDevelopment: true, //disables development service worker
+        removeFirebaseServiceWorker: true, //tells plugin to help unregistering/removing
       },
     },
     `gatsby-plugin-react-helmet`,
