@@ -76,7 +76,7 @@ const IndexPage = () => {
           display: 'flex',
           flexDirection: 'row',
           alignItems: 'stretch',
-          height: '100vh',
+          height: 'auto',
         }}
       >
         <SEO title="런치패드: 해외 스니커즈 래플 및 발매 소식을 모두 한곳에."></SEO>
@@ -343,7 +343,7 @@ const Intro = styled.div`
   justify-content: center;
   overflow: scroll;
 
-  @media only screen and (max-width: 1200px) {
+  @media only screen and (max-width: 1500px) {
     display: none;
   }
 `;
@@ -386,7 +386,6 @@ const SearchPanel = styled.div`
   flex-direction: column;
   border-radius: 8px;
   background: #f0f0f3;
-  min-height: 1000px;
   @media only screen and (max-width: 600px) {
     justify-content: center;
   }
@@ -396,9 +395,8 @@ const SearchBody = styled.div`
   display: flex;
   justify-content: center;
   margin-top: 100px;
-  @media only screen and (max-width: 1200px) {
+  @media only screen and (max-width: 1500px) {
     margin-top: 450px;
-    min-height: 1000px;
     overflow: hidden;
   }
 `;
@@ -407,11 +405,16 @@ const SearchResults = styled.div`
   display: flex;
   flex-direction: column;
   align-items: center;
+  @media only screen and (max-width: 600px) {
+    padding-bottom: 50px;
+    padding-left: 10px;
+    padding-right: 10px;
+  }
 `;
 
 const MobileIntro = styled.div`
   display: none;
-  @media only screen and (max-width: 1400px) {
+  @media only screen and (max-width: 1500px) {
     background-image: url(${mobileIntroImage});
     background-position: bottom;
     flex-direction: column;
@@ -430,7 +433,7 @@ const IntroPanel = styled.div`
   padding-top: 96px;
   padding-bottom: 96px;
   width: 80%;
-  height: 800px;
+  height: 100vh;
   background: #202020;
 `;
 
@@ -485,7 +488,7 @@ const BuyMeACoffee = styled.div`
   display: flex;
   align-items: center;
 
-  @media only screen and (max-width: 1200px) {
+  @media only screen and (max-width: 1500px) {
     display: none;
   }
 `;

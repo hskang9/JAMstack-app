@@ -14,9 +14,7 @@ const Hits = ({ hits }) => {
             src={hit.image}
           />
           <Description>
-            <Name to="/">
-              <h3>{hit.name}</h3>
-            </Name>
+            <h3>{hit.name}</h3>
             <h4 className="neumorphism-text-black-light">{hit.release_date}</h4>
             <Link
               style={{
@@ -133,6 +131,7 @@ const Results = styled.div`
   min-height: 500px;
   grid-row-gap: 24px;
   grid-column-gap: 20px;
+  padding: 20px;
   grid-template-rows: auto;
   grid-template-columns: 1fr 1fr;
   ::-webkit-scrollbar {
